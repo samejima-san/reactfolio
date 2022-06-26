@@ -1,0 +1,11 @@
+.piece{
+    width: 600px;
+    height: 100px;
+    border-radius: 2%;
+    background-color: #f58c57db;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgb(98, 98, 98, .3);
+    color: black;
+}

@@ -1,26 +1,21 @@
-import { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Info from './components/Info';
-import Businesscard from './components/Businesscard';
-import File from './components/File';
-import { Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Home from './components/Home';
+import Projects from './components/Projects';
 
 
 function App() {
-  const [toggle, setToggle] = useState(true)
-  const flipswitch = () =>{ setToggle(!toggle) }
-  const renderText = () => {
-    if(toggle){ return <Info /> }
-    else{ return <Businesscard /> }
-  }
-
-
-  return (
-        <div className="block">
-          <Info />
-          <Businesscard />
-        </div>
+  return(
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route exact path="/Projects" element={<Projects />}/>
+      </Routes>
+    </Router>
   );
+
 }
+/*<Route path="*" element={<NotFound />}/>*/
 
 export default App;

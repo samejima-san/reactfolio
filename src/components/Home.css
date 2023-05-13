@@ -1,0 +1,20 @@
+.block{
+  max-width: 90%;
+  max-height: 30%;
+  border-radius: 2%;
+  background-color: #f58c57db;
+  padding: 2%;
+  box-shadow: 0 0 20px rgb(98, 98, 98, .3);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block div{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 5%;
+}

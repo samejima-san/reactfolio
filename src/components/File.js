@@ -1,11 +1,12 @@
-import React from "react";
 import './File.css'
 
-const File = ({name, description}) =>{
+
+const File = ({project}) =>{
     return(
         <div className='piece'>
-            <h2>{name}</h2>
-            <p>{description}</p>
+            <h2>{project.name}</h2>
+            <p>{project.description}</p>
+            <a href={`www.github.com/samejima-san/${project.name}`}>{`www.github.com/samejima-san/${project.name}`}</a>
         </div>
     );
 }

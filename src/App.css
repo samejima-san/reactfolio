@@ -1,40 +1,8 @@
-.block{
-  width: 600px;
-  height: 600px;
-  border-radius: 2%;
-  background-color: #f58c57db;
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 20px rgb(98, 98, 98, .3);
-  color: black;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.block div{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  padding: 5%;
-}
 
-         
-button {
-  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: black;            
-  border-radius: 10px;
-  display: block;
-  border: none;
-}
 
-button:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}
+
